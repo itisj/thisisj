@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GujieDai Works</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="img/js.png" sizes="16x16">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    html {cursor: auto;}
+</style>
+    
+<body>
+
+
+<!-- header -->
+<div class="header">
+<div class="row">
+    <div class="col-9 col-s-12">
+        <h1>Works</h1>
+        
+    </div>
+</div>
+</div>
+ 
+<!-- main -->
+<div class="row" style="padding: 60px;">
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/escape/" target="_blank">
+                <img src="img/escape.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/digitalvoid/" target="_blank">
+                <img src="img/digitalvoid.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/dearphil/" target="_blank">
+                <img src="img/dearphil.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+    
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/fashionshow/" target="_blank">
+                <img src="img/fashionshow.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/jsdaily/" target="_blank">
+                <img src="img/sketch.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="col-4 col-s-6" style="padding: 30px;">
+
+        <div class="aside">
+            <a href="https://itisj.github.io/photography/" target="_blank">
+                <img src="img/photography.PNG" class="image" style="float:left;width:100%;object-fit:cover;">
+
+            </a>
+        </div>
+    </div>
+    
+    
+</div>
+    
+
+    
+<!-- footer -->
+<div class="footer">
+  <p>© 2021 Dai Gu Jie All Rights Reserved</p>
+</div>
+
+<script>
+    // cursor
+(function() {
+var follower, init, mouseX, mouseY, positionElement, printout, timer;
+follower = document.getElementById('follower');
+printout = document.getElementById('printout');
+mouseX = (event) => {
+  return event.clientX;
+};
+mouseY = (event) => {
+  return event.clientY;
+};
+
+positionElement = (event) => {
+  var mouse;
+  mouse = {
+    x: mouseX(event),
+    y: mouseY(event)
+  };
+  
+  follower.style.top = mouse.y + 'px';
+  return follower.style.left = mouse.x + 'px';
+};
+
+timer = false;
+window.onmousemove = init = (event) => {
+var _event;
+_event = event;
+return timer = setTimeout(() => {
+  return positionElement(_event);
+}, 1);
+};
+
+}).call(this);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>three test</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="module" src="main.js"></script> -->
+	</head>
+
+	<body>
+
+
+    <div id="follower">
+      <div id="circle1"></div>
+      <div id="circle2"></div>
+    </div>
+
+    <div class="container">
+      <div class="content v2">
+        <a href="works.html" target="_blank">
+          <p>&nbsp;WORKS&nbsp;</p>
+        </a>
+      </div>
+      <div class="content v2">
+        <a href="CV.pdf" target="_blank"><p>&nbsp;ABOUT&nbsp;</p></a>
+      </div>
+      <div class="content v2">
+        <a href="CV.pdf" target="_blank"><p>&nbsp;CONTACT&nbsp;</p></a>
+      </div>
+    </div>
+
+
+    <script>
+			// cursor
+      (function() {
+        var follower, init, mouseX, mouseY, positionElement, printout, timer;
+        follower = document.getElementById('follower');
+        printout = document.getElementById('printout');
+        mouseX = (event) => {
+          return event.clientX;
+        };
+        mouseY = (event) => {
+          return event.clientY;
+        };
+        
+        positionElement = (event) => {
+          var mouse;
+          mouse = {
+            x: mouseX(event),
+            y: mouseY(event)
+          };
+          
+          follower.style.top = mouse.y + 'px';
+          return follower.style.left = mouse.x + 'px';
+      };
+      
+      timer = false;
+      window.onmousemove = init = (event) => {
+        var _event;
+        _event = event;
+        return timer = setTimeout(() => {
+          return positionElement(_event);
+        }, 1);
+      };
+    
+    }).call(this);
+
+		</script>
+
+	</body>
+</html>
