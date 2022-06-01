@@ -321,7 +321,7 @@ html {
 
 .image {
   opacity: 1;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   display: block;
   width: 100%;
   height: auto;
