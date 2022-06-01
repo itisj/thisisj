@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dai, Gujie Folio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="module" src="main.js"></script> -->
+    <style>
+body {
+  background: linear-gradient(231deg, #3f121f, #1f350f, #0c0c35, #35180d);
+  background-size: 800% 800%;
+
+  -webkit-animation: gradient 80s ease infinite;
+  -moz-animation: gradient 80s ease infinite;
+  -o-animation: gradient 80s ease infinite;
+  animation: gradient 80s ease infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+    </style>
+	</head>
+
+	<body>
+
+
+    <div id="follower">
+      <div id="circle1"></div>
+      <div id="circle2"></div>
+    </div>
+
+    <div class="container">
+      <div class="content v2">
+        <a href="works.html" style="cursor: none;">
+          <p>&nbsp;WORKS&nbsp;</p>
+        </a>
+      </div>
+      <div class="content v2">
+        <a href="./Dai, Gujie_CV.pdf" target="_blank" style="cursor: none;"><p>&nbsp;ABOUT&nbsp;</p></a>
+      </div>
+      <div class="content v2">
+        <a href="mailto:s3801333@student.rmit.edu.au" target="_blank" style="cursor: none;"><p>&nbsp;CONTACT&nbsp;</p></a>
+      </div>
+    </div>
+
+
+    <script>
+			// cursor
+      (function() {
+        var follower, init, mouseX, mouseY, positionElement, printout, timer;
+        follower = document.getElementById('follower');
+        printout = document.getElementById('printout');
+        mouseX = (event) => {
+          return event.clientX;
+        };
+        mouseY = (event) => {
+          return event.clientY;
+        };
+        
+        positionElement = (event) => {
+          var mouse;
+          mouse = {
+            x: mouseX(event),
+            y: mouseY(event)
+          };
+          
+          follower.style.top = mouse.y + 'px';
+          return follower.style.left = mouse.x + 'px';
+      };
+      
+      timer = false;
+      window.onmousemove = init = (event) => {
+        var _event;
+        _event = event;
+        return timer = setTimeout(() => {
+          return positionElement(_event);
+        }, 1);
+      };
+    
+    }).call(this);
+
+		</script>
+
+	</body>
+</html>
