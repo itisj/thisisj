@@ -154,7 +154,7 @@ html {
 }
 
 .content {
-  margin: 8px;
+  margin: 0px;
 }
 .content p {
   display: inline;
@@ -203,7 +203,7 @@ html {
   padding-left: 76px;
   padding-top: 36px;
   padding-bottom: 0px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 
@@ -258,7 +258,7 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -271,9 +271,10 @@ html {
   .col-s-9 {width: 75%;}
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+  .col-s-12 {width: 100%; margin-left: 12px;}
+
 }
-@media only screen and (min-width: 858px) {
+@media only screen and (min-width: 860px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -282,7 +283,7 @@ html {
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
   .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
+  .col-8 {width: 66.66%; margin-left: 80px; margin-right: 80px;}
   .col-9 {width: 75%;}
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
